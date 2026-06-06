@@ -5,6 +5,8 @@ export type SummarySection = {
   paragraphs: string[];
 };
 
+export type PoliticalOrientation = "gauche" | "centre" | "droite" | "non politique" | "non renseigné";
+
 export type Interview = {
   id: string;
   slug: string;
@@ -12,6 +14,7 @@ export type Interview = {
   guest: string;
   role: string;
   themes: string[];
+  political_orientation?: PoliticalOrientation;
   publish_date?: string | null;
   duration: string;
   duration_seconds: number;
@@ -24,6 +27,7 @@ export type Interview = {
     source_file?: string | null;
   };
   executive_summary?: string;
+  executive_points?: string[];
   youth_advice?: string;
   reading_recommendations?: string[];
   sections: SummarySection[];

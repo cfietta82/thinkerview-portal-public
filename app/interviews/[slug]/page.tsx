@@ -17,19 +17,11 @@ import {
 } from "lucide-react";
 import rawData from "@/data/interviews.json";
 import { publishedInterviews } from "@/lib/published-interviews";
+import { orientationLabels, themeLabels } from "@/lib/analysis";
 import type { Interview, PortalData } from "@/types/portal";
 
 const data = rawData as PortalData;
 const interviews = publishedInterviews(data);
-
-const themeLabels: Record<string, string> = {
-  democratie: "Démocratie",
-  economie: "Économie",
-  ecologie: "Écologie",
-  geopolitique: "Géopolitique",
-  numerique: "Numérique",
-  societe: "Société"
-};
 
 export function generateStaticParams() {
   return interviews.map((interview) => ({ slug: interview.slug }));
@@ -55,9 +47,9 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
     <main>
       <section className="border-b border-white/10 bg-[linear-gradient(135deg,#111111,#17120d_46%,#0f1715)]">
         <div className="mx-auto max-w-6xl px-5 py-8 md:px-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-sm text-stone-300 transition hover:text-amber-200">
+          <Link href="/resumes" className="inline-flex items-center gap-2 text-sm text-stone-300 transition hover:text-amber-200">
             <ArrowLeft className="h-4 w-4" />
-            Retour au catalogue
+            Retour aux résumés
           </Link>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
@@ -88,6 +80,12 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
                 ))}
               </div>
 
+              {interview.political_orientation && (
+                <div className="mt-4 inline-flex border border-stone-700 bg-black/20 px-3 py-2 text-sm text-stone-200">
+                  Orientation politique indicative : <span className="ml-2 text-amber-100">{orientationLabels[interview.political_orientation] ?? interview.political_orientation}</span>
+                </div>
+              )}
+
               <div className="mt-6 grid gap-3 md:grid-cols-2">
                 <CartoucheBlock icon={GraduationCap} label="Conseil aux jeunes générations">
                   <p>{interview.youth_advice ?? "Conseil à compléter lors de la prochaine passe éditoriale."}</p>
@@ -107,7 +105,7 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
 
               <div className="mt-6 border-l border-amber-200/40 pl-5">
                 <p className="text-sm uppercase tracking-[0.18em] text-amber-100">Résumé exécutif</p>
-                <KeyIdeas summary={interview.executive_summary ?? ""} />
+                <KeyIdeas points={interview.executive_points} summary={interview.executive_summary ?? ""} />
               </div>
 
               <a
@@ -168,25 +166,31 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("fr-FR").format(value);
 }
 
-function KeyIdeas({ summary }: { summary: string }) {
+function KeyIdeas({ points, summary }: { points?: string[]; summary: string }) {
+  const normalizedPoints = points?.length ? points.map((text, index) => ({ index: String(index + 1), text })) : undefined;
+  if (normalizedPoints?.length) {
+    return <ExecutiveList ideas={normalizedPoints} />;
+  }
   const ideas = parseKeyIdeas(summary);
 
   if (ideas.length >= 5) {
-    return (
-      <ol className="mt-4 grid gap-2.5">
-        {ideas.map((idea) => (
-          <li className="grid grid-cols-[2rem_1fr] gap-3 text-base leading-7 text-stone-200" key={`${idea.index}-${idea.text}`}>
-            <span className="flex h-8 w-8 items-center justify-center border border-amber-200/35 bg-amber-100/10 text-sm font-semibold text-amber-100">
-              {idea.index}
-            </span>
-            <span>{idea.text}</span>
-          </li>
-        ))}
-      </ol>
-    );
+    return <ExecutiveList ideas={ideas} />;
   }
 
   return <p className="mt-3 whitespace-pre-line text-base leading-8 text-stone-200">{summary}</p>;
+}
+
+function ExecutiveList({ ideas }: { ideas: { index: string; text: string }[] }) {
+  return (
+    <ol className="mt-5 grid gap-4">
+      {ideas.slice(0, 10).map((idea) => (
+        <li className="grid grid-cols-[2.25rem_1fr] gap-3 text-base font-semibold leading-7 text-stone-200" key={`${idea.index}-${idea.text}`}>
+          <span className="flex h-8 w-8 items-center justify-center bg-amber-100/10 text-sm font-semibold text-amber-100">{idea.index}</span>
+          <span>{idea.text}</span>
+        </li>
+      ))}
+    </ol>
+  );
 }
 
 function parseKeyIdeas(summary: string) {
