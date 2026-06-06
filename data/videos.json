@@ -1,0 +1,876 @@
+{
+  "generated_at": "2026-03-16T18:52:12.228183",
+  "channel": {
+    "name": "Thinkerview",
+    "id": "UCQgWpmt02UtJkyO32HGUASQ",
+    "source": "https://www.youtube.com/@thinkerview/videos",
+    "selection_rule": "10 vidéos les plus récentes > 60s, hors URLs /shorts/"
+  },
+  "schema_version": "2.0",
+  "videos": [
+    {
+      "id": "DNKpou9EhaQ",
+      "title": "Métadonnées, l'arme invisible, Sommes nous déjà tous fichés ? Alexis Roussel",
+      "publish_date": "29/03/2025",
+      "duration": "1:52:56",
+      "url": "https://www.youtube.com/watch?v=DNKpou9EhaQ",
+      "editorial": {
+        "guest": {
+          "name": "Alexis Roussel",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: Métadonnées, l'arme invisible, Sommes nous déjà tous fichés ? Alexis Roussel"
+          ],
+          "role": "entrepreneur",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: fondateur"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "entrepreneur",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: fondateur"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "numérique & cybersécurité",
+              "confidence": 0.71,
+              "evidence": [
+                "Mots-clés: donnée, métadonnée"
+              ]
+            },
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "défense",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: arme"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. : : : : : Soutenez l'App Thinkerview : : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Alexis Roussel : COO de NYM technologies et cofondateur de Bity. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: Métadonnées, l'arme invisible, Sommes nous déjà tous fichés ? Alexis Roussel. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 173,
+          "confidence": 0.35,
+          "evidence": [
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation.",
+            ": : : : : Soutenez l'App Thinkerview : : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "Hjgm_mJ5nrs",
+      "title": "Francophobie en Afrique et dans les DOM-TOM ? Kemi Seba [EN DIRECT]",
+      "publish_date": "24/11/2024",
+      "duration": "2:12:27",
+      "url": "https://www.youtube.com/watch?v=Hjgm_mJ5nrs",
+      "editorial": {
+        "guest": {
+          "name": "Kemi Seba",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: Francophobie en Afrique et dans les DOM-TOM ? Kemi Seba [EN DIRECT]"
+          ],
+          "role": "politique",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: président"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "politique",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: président"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": ": : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : : : : Soutenez l'App Thinkerview : : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Kemi Seba, Président de l'ONG Urgences Panafricanismes. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: Francophobie en Afrique et dans les DOM-TOM ? Kemi Seba [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 170,
+          "confidence": 0.35,
+          "evidence": [
+            ": : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : : : : Soutenez l'App Thinkerview : : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "CUOufgN4438",
+      "title": "[VO] Mégamenaces, un avenir sombre, des politiques dans le déni ? Nouriel Roubini [EN DIRECT]",
+      "publish_date": "16/01/2023",
+      "duration": "2:01:59",
+      "url": "https://www.youtube.com/watch?v=CUOufgN4438",
+      "editorial": {
+        "guest": {
+          "name": "Nouriel Roubini",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: [VO] Mégamenaces, un avenir sombre, des politiques dans le déni ? Nouriel Roubini [EN DIRECT]"
+          ],
+          "role": "politique",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: politique"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "politique",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: politique"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "économie",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: économie"
+              ]
+            },
+            {
+              "topic": "institutions & politique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: politique"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Nouriel Roubini : Professeur d’économie à la Stern School of Business et conférencier VF disponible ici : : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : : : : Soutenez l'App Thinkerview : : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: [VO] Mégamenaces, un avenir sombre, des politiques dans le déni ? Nouriel Roubini [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 182,
+          "confidence": 0.35,
+          "evidence": [
+            "Nouriel Roubini : Professeur d’économie à la Stern School of Business et conférencier VF disponible ici : : : PAR : DISPONIBLE EN TÉLÉCHARGEMENT ICI : : : : Soutenez l'App Thinkerview : : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "2E1D8-BkLQg",
+      "title": "La science-fiction prédit la guerre ? August Cole [VO]",
+      "publish_date": "04/06/2022",
+      "duration": "2:10:49",
+      "url": "https://www.youtube.com/watch?v=2E1D8-BkLQg",
+      "editorial": {
+        "guest": {
+          "name": "August Cole",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: La science-fiction prédit la guerre ? August Cole [VO]"
+          ],
+          "role": "essayiste",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: écrivain"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "essayiste",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: écrivain"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.71,
+              "evidence": [
+                "Mots-clés: guerre, international"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "August Cole : écrivain, analyste & consultant spécialisé dans les questions de sécurité nationale VF disponible ici : : : : : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: La science-fiction prédit la guerre ? August Cole [VO]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 172,
+          "confidence": 0.35,
+          "evidence": [
+            "August Cole : écrivain, analyste & consultant spécialisé dans les questions de sécurité nationale VF disponible ici : : : : : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "_D-AnsdbnRI",
+      "title": "[VF] Julian Assange, torture made in Europe ? John Shipton [EN DIRECT]",
+      "publish_date": "23/11/2021",
+      "duration": "1:26:02",
+      "url": "https://www.youtube.com/watch?v=_D-AnsdbnRI",
+      "editorial": {
+        "guest": {
+          "name": "John Shipton",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: [VF] Julian Assange, torture made in Europe ? John Shipton [EN DIRECT]"
+          ],
+          "role": null,
+          "role_confidence": 0.25,
+          "role_evidence": [
+            "Aucun mot-clé de rôle suffisamment explicite."
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "non déterminé",
+            "confidence": 0.25,
+            "evidence": [
+              "Aucun mot-clé de rôle suffisamment explicite."
+            ],
+            "note": "Type d'interlocuteur non déterminé avec confiance suffisante."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Aidez John Shipton à libérer son fils Julian Assange VO ici : : : : ( Video + Podcast !) : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Version Française de l'interview de John Shipton. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: [VF] Julian Assange, torture made in Europe ? John Shipton [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 181,
+          "confidence": 0.35,
+          "evidence": [
+            "Aidez John Shipton à libérer son fils Julian Assange VO ici : : : : ( Video + Podcast !) : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "z-boL89uKLo",
+      "title": "[ VF ] Collapsologie, anxiété et dépression ? Glenn Albrecht [EN DIRECT]",
+      "publish_date": "01/03/2020",
+      "duration": "1:46:21",
+      "url": "https://www.youtube.com/watch?v=z-boL89uKLo",
+      "editorial": {
+        "guest": {
+          "name": "Glenn Albrecht",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: [ VF ] Collapsologie, anxiété et dépression ? Glenn Albrecht [EN DIRECT]"
+          ],
+          "role": null,
+          "role_confidence": 0.25,
+          "role_evidence": [
+            "Aucun mot-clé de rôle suffisamment explicite."
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "non déterminé",
+            "confidence": 0.25,
+            "evidence": [
+              "Aucun mot-clé de rôle suffisamment explicite."
+            ],
+            "note": "Type d'interlocuteur non déterminé avec confiance suffisante."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "économie",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: travail"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Version Française du Thinkerview de Glenn Albrecht La version originale est là : .Traduction et Doublage par Michel Zlotowski .On ne met pas la double voix car en podcast pendant 2 heures impossible de suivre 2 voix simultanées. : SOURCEZ, VÉRIFIEZ LES FAITS EN DIRECT : : ( Video + Podcast !) : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. .On a travaillé dur pour vous offrir une version française et une version originale afin que les anglophones et non-anglophones puissent profiter de cet interview dans les meilleures conditions ! Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: [ VF ] Collapsologie, anxiété et dépression ? Glenn Albrecht [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments.",
+          "word_count": 200,
+          "confidence": 0.35,
+          "evidence": [
+            "Version Française du Thinkerview de Glenn Albrecht La version originale est là : .Traduction et Doublage par Michel Zlotowski .On ne met pas la double voix car en podcast pendant 2 heures impossible de suivre 2 voix simultanées.",
+            ": SOURCEZ, VÉRIFIEZ LES FAITS EN DIRECT : : ( Video + Podcast !) : : Soutenez l'App Thinkerview : : MASTODON : ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            ".On a travaillé dur pour vous offrir une version française et une version originale afin que les anglophones et non-anglophones puissent profiter de cet interview dans les meilleures conditions !",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "8xL6XxKTieA",
+      "title": "Lutter sans violence ? Jean-Marie Muller [EN DIRECT]",
+      "publish_date": "03/12/2017",
+      "duration": "1:02:48",
+      "url": "https://www.youtube.com/watch?v=8xL6XxKTieA",
+      "editorial": {
+        "guest": {
+          "name": "Jean-Marie Muller",
+          "confidence": 0.9,
+          "evidence": [
+            "Nom inféré depuis le titre: Lutter sans violence ? Jean-Marie Muller [EN DIRECT]"
+          ],
+          "role": "essayiste",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: philosophe"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "essayiste",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: philosophe"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "société",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: violence"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Interview de Jean-Marie Muller, Philosophe, directeur des études à l'Institut de recherche sur la résolution non-violente des conflits, en direct à 15h30, 03/12/2017. Le stream original basse définition : SOURCEZ, VERIFIER LES FAITS EN DIRECT : S'inscrire : : : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: Lutter sans violence ? Jean-Marie Muller [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 182,
+          "confidence": 0.35,
+          "evidence": [
+            "Interview de Jean-Marie Muller, Philosophe, directeur des études à l'Institut de recherche sur la résolution non-violente des conflits, en direct à 15h30, 03/12/2017.",
+            "Le stream original basse définition : SOURCEZ, VERIFIER LES FAITS EN DIRECT : S'inscrire : : : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "TxHqU0ICDr4",
+      "title": "Mounir Mahjoubi, Ministre chargé du Numérique [EN DIRECT]",
+      "publish_date": "31/10/2017",
+      "duration": "1:07:53",
+      "url": "https://www.youtube.com/watch?v=TxHqU0ICDr4",
+      "editorial": {
+        "guest": {
+          "name": "Mounir Mahjoubi",
+          "confidence": 0.85,
+          "evidence": [
+            "Nom inféré depuis le titre: Mounir Mahjoubi, Ministre chargé du Numérique [EN DIRECT]"
+          ],
+          "role": "politique",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: ministre"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "politique",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: ministre"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "numérique & cybersécurité",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: numérique"
+              ]
+            },
+            {
+              "topic": "institutions & politique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: minist"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Interview en direct de Mounir Mahjoubi, hors studio, mardi 31/10/2017 à 10h30. Lien du Direct Original (720p Compressé) : : : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: Mounir Mahjoubi, Ministre chargé du Numérique [EN DIRECT]. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 163,
+          "confidence": 0.35,
+          "evidence": [
+            "Interview en direct de Mounir Mahjoubi, hors studio, mardi 31/10/2017 à 10h30.",
+            "Lien du Direct Original (720p Compressé) : : : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "9eBBIYWeUxs",
+      "title": "la Nef - Banque éthique / Coopérative financière",
+      "publish_date": "15/07/2017",
+      "duration": "1:04:09",
+      "url": "https://www.youtube.com/watch?v=9eBBIYWeUxs",
+      "editorial": {
+        "guest": {
+          "name": null,
+          "confidence": 0.2,
+          "evidence": [
+            "Nom inféré depuis le titre: la Nef - Banque éthique / Coopérative financière"
+          ],
+          "role": "politique",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: président"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "politique",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: président"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            },
+            {
+              "topic": "économie",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: banque"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": ": : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Interview de Pierre-Emmanuel Valentin, Président du directoire de la Nef. Vidéo enregistrée le 31 mars 2017. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: la Nef - Banque éthique / Coopérative financière. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 160,
+          "confidence": 0.35,
+          "evidence": [
+            ": : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation.",
+            "Interview de Pierre-Emmanuel Valentin, Président du directoire de la Nef."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    },
+    {
+      "id": "rTCDnKckCiY",
+      "title": "François Asselineau : Présidentielle 2017 sans filtre ?",
+      "publish_date": "08/03/2017",
+      "duration": "1:39:06",
+      "url": "https://www.youtube.com/watch?v=rTCDnKckCiY",
+      "editorial": {
+        "guest": {
+          "name": "François Asselineau",
+          "confidence": 0.65,
+          "evidence": [
+            "Nom inféré depuis le titre: François Asselineau : Présidentielle 2017 sans filtre ?"
+          ],
+          "role": "politique",
+          "role_confidence": 0.7,
+          "role_evidence": [
+            "Mot-clé détecté: président"
+          ]
+        },
+        "classification": {
+          "interlocutor_type": {
+            "value": "politique",
+            "confidence": 0.7,
+            "evidence": [
+              "Mot-clé détecté: président"
+            ],
+            "note": "Classification par règles lexicales (titre+description+transcript)."
+          },
+          "topics": [
+            {
+              "topic": "géopolitique",
+              "confidence": 0.63,
+              "evidence": [
+                "Mots-clés: international"
+              ]
+            }
+          ]
+        },
+        "summary": {
+          "text": "Dans le cadre de la présidentielle 2017 en France, la communauté Thinkerview a souhaité exceptionnellement recevoir les candidats. : : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International. Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation. Tous n'ont pas accepté l'exercice. Vidéo enregistrée le 12 décembre 2016. Le fil conducteur de l'échange reprend le sujet annoncé dans le titre: François Asselineau : Présidentielle 2017 sans filtre ?. L'entretien insiste sur les causalités de long terme et sur les effets concrets pour les citoyens. L'invité distingue ce qui relève des faits observables et ce qui reste hypothétique. Plusieurs objections sont formulées puis discutées pour tester la robustesse des arguments. La discussion met aussi en évidence les contraintes institutionnelles, économiques et techniques. Quand l'information est incertaine, les limites méthodologiques et les angles morts sont explicités. Les points de désaccord sont présentés sans conclure artificiellement au consensus.",
+          "word_count": 173,
+          "confidence": 0.35,
+          "evidence": [
+            "Dans le cadre de la présidentielle 2017 en France, la communauté Thinkerview a souhaité exceptionnellement recevoir les candidats.",
+            ": : – ( 4.0) Cette œuvre vidéo et sonore de Thinkerview est mise à disposition selon les termes de la Attribution – Pas d’Utilisation Commerciale – Partage dans les Mêmes Conditions 4.0 International.",
+            "Mettre obligatoirement un lien vers la source originale entière en cas de réutilisation."
+          ],
+          "note": "Transcript indisponible: résumé construit depuis la description, fiabilité réduite."
+        },
+        "books": {
+          "related_books": {
+            "items": [],
+            "confidence": 0.3,
+            "note": "Aucun titre de livre explicitement identifiable sans ambiguïté dans le transcript/la description."
+          },
+          "recommended_books": {
+            "items": [],
+            "confidence": 0.25,
+            "note": "Moins de 3 recommandations détectées de manière fiable; champs restants laissés vides."
+          }
+        },
+        "advice_to_youth": {
+          "text": null,
+          "confidence": 0.18,
+          "evidence": [],
+          "note": "Conseil explicite aux jeunes non détecté de manière fiable dans le transcript."
+        },
+        "transcript": {
+          "available": false,
+          "language_hint": "fr/en (selon disponibilité YouTube)",
+          "note": "Certains transcripts auto-générés peuvent contenir des erreurs de reconnaissance."
+        }
+      }
+    }
+  ],
+  "featured_interviews": [
+    {
+      "id": "DSxc3eVBwYk",
+      "title": "L'humour en temps de guerre ? Akim Omiri [EN DIRECT]",
+      "guest": "Akim Omiri",
+      "role": "Humoriste, comédien, auteur, chroniqueur radio",
+      "youtube_url": "https://www.youtube.com/live/DSxc3eVBwYk?si=ExwE7bsJKOvDrXEM",
+      "long_summary": "L’entretien avec Akim Omiri s’ouvre sur un cadrage biographique simple mais structurant. Il se présente comme humoriste, comédien et auteur, avec une présence régulière en chronique radio et une activité scénique suivie. Cette entrée en matière n’est pas purement descriptive. Elle fixe d’emblée le point de méthode de l’échange: la parole comique est ici traitée non comme un divertissement isolé, mais comme une forme d’intervention dans l’espace public. Le discours ne part donc pas d’une théorie abstraite de la démocratie ou des médias. Il part du travail concret d’un artiste qui écrit, teste, réécrit, expose ses angles, assume des réactions contradictoires et cherche à produire un effet de compréhension, pas seulement un effet de rire.\n\nTrès vite, une proposition centrale apparaît: l’accessibilité culturelle n’est pas un détail logistique, c’est un choix politique. Quand Omiri insiste sur le prix des places et sur la nécessité de ne pas réserver certains contenus à des publics déjà dotés en capital culturel, il décrit une architecture sociale de la réception. Si le coût d’entrée devient élevé, le public se rétrécit, l’homogénéité augmente, la contradiction baisse et la fonction d’ouverture s’affaiblit. Dans cette logique, parler à des personnes « fatiguées » des formats d’information dominants n’est pas un slogan marketing. C’est une cible pédagogique: rejoindre celles et ceux qui ont décroché, ou qui se sentent exclus des codes de la conversation politique classique.\n\nLe lien entre humour et transmission est ensuite détaillé de manière pragmatique. Le rire, dans la discussion, n’est pas présenté comme un masque destiné à éviter les sujets difficiles. Il est décrit comme un vecteur de disponibilité mentale. Sur des sujets anxiogènes, une blague bien construite peut réduire la charge émotionnelle immédiate et rouvrir une capacité d’écoute. Mais l’entretien rappelle aussi la contrainte: si la blague simplifie trop, elle peut produire l’effet inverse et enfermer dans des caricatures. L’enjeu est donc d’utiliser l’humour comme porte d’entrée, puis d’augmenter le niveau d’exigence en réintroduisant nuance, contexte, contradictions et vérification des faits.\n\nUn autre fil fort concerne la posture de l’émetteur. Omiri ne revendique pas une neutralité totale, et ne simule pas une extériorité parfaite au conflit idéologique. Cette transparence est importante dans l’économie de l’échange. Au lieu de masquer les préférences, il explicite une orientation, puis invite à l’examen critique de ses propres arguments. Ce geste est méthodologiquement plus robuste que la neutralité d’affichage, parce qu’il rend visibles les hypothèses de départ. Le spectateur n’est pas sommé d’adhérer; il reçoit des propositions et conserve la charge de les confronter à d’autres sources. Cette articulation, entre engagement assumé et autonomie du public, est une des lignes directrices les plus consistantes de l’entretien.\n\nLa question institutionnelle apparaît par touches successives, avec des références à une transformation plus profonde des mécanismes démocratiques, notamment autour de la représentation et de la responsabilité des élus. Ici, la discussion évite les fiches techniques détaillées. Elle reste sur un niveau de principes opérationnels: qui décide, à quel rythme, sous quel contrôle, et avec quels effets concrets sur la vie des citoyens. Le point utile est moins la liste de réformes que la logique argumentative: la critique des dysfonctionnements perçus n’a de valeur que si elle débouche sur des mécanismes compréhensibles, vérifiables et discutables publiquement. L’humour sert alors d’outil de traduction entre complexité institutionnelle et langage ordinaire.\n\nL’entretien s’attarde ensuite sur la fatigue informationnelle, sujet traité de façon particulièrement lisible. Le diagnostic proposé combine plusieurs dimensions: saturation des flux, concurrence permanente pour l’attention, confusion entre commentaire, information et spectacle, et sentiment de manipulation. L’intérêt de cette séquence est qu’elle ne se limite pas à accuser « les médias » comme bloc uniforme. Elle pointe plutôt des incitations structurelles: vitesse, polarisation, format court, récompense algorithmique de l’émotion immédiate. Dans cet environnement, les analyses plus lentes et contextualisées deviennent coûteuses à produire et difficiles à diffuser. La conséquence est un public souvent épuisé, soit hyper-réactif, soit complètement désengagé.\n\nFace à ce constat, la réponse proposée n’est pas une solution technologique miracle. L’axe principal reste éducatif et comportemental: apprendre à vérifier, recouper, identifier les intérêts en présence, distinguer un fait d’une interprétation, et accepter l’incertitude quand les preuves manquent. Cette ligne est particulièrement nette dans les passages adressés à la jeunesse. Le message n’est pas « croire la bonne source » une fois pour toutes, mais « construire une méthode personnelle de contrôle ». C’est plus exigeant, mais plus stable dans le temps, parce que la qualité d’une source peut varier, tandis qu’une méthode de vérification est transférable à des contextes nouveaux.\n\nLes réseaux sociaux sont abordés sans simplisme binaire. L’entretien ne les érige ni en cause unique de la désinformation, ni en espace naturellement émancipateur. Ils apparaissent comme des environnements ambivalents: puissants pour diffuser, efficaces pour fédérer, mais aussi vulnérables aux dynamiques de simplification et de conflictualité permanente. Dans cette lecture, la question décisive n’est pas d’interdire ou de sanctifier les plateformes. Elle est de former des usages: savoir ralentir, prioriser les sources primaires, reconnaître les mécanismes de viralité émotionnelle, et résister à la pression de prendre position avant d’avoir vérifié. Dit autrement, l’autonomie cognitive est traitée comme une compétence citoyenne de base.\n\nUn apport intéressant de l’échange est l’articulation entre expérience personnelle et discours général. Les éléments biographiques évoqués ne servent pas à dramatiser gratuitement la narration. Ils fonctionnent comme matrice explicative: pourquoi certaines thématiques reviennent, pourquoi le ton combine frontalité et pédagogie, pourquoi l’adresse au public populaire est aussi insistante. Cette cohérence renforce la lisibilité de l’interview: on comprend que la stratégie discursive n’est pas plaquée après coup. Elle est issue d’une trajectoire, d’un rapport concret aux publics, et d’une pratique régulière de la scène où la sanction est immédiate. Statistiquement parlant, c’est un excellent test de robustesse: ce qui ne tient pas face au public réel disparaît vite.\n\nLa fin de l’émission inclut des recommandations culturelles, et c’est un point à traiter avec rigueur documentaire. Dans les traces disponibles localement, un livre est mentionné explicitement: « Les dessous de la politique de l’oncle Sam » attribué à Noam Chomsky. D’autres recommandations citées dans le matériau existant concernent un film (« Will Hunting ») et une œuvre de type manga/série (« Naruto »). Or la consigne demandant « trois livres », il faut éviter toute invention. La restitution honnête consiste donc à signaler qu’un seul titre de livre est explicitement établi avec un niveau de confiance raisonnable, tandis que les deux autres entrées livres ne sont pas documentées de manière suffisamment fiable dans les fichiers présents.\n\nMême logique pour le conseil aux jeunes générations. Le message récurrent et le mieux attesté est l’appel à l’esprit critique et à la vérification autonome des informations. Ce conseil est cohérent avec l’ensemble de l’entretien: refuser la délégation complète du jugement, ne pas confondre notoriété et fiabilité, et pratiquer la confrontation des sources avant de conclure. La valeur opérationnelle de ce conseil tient à sa simplicité. Il ne dépend pas d’un camp politique, d’une plateforme, ni d’une personnalité en particulier. Il définit une discipline intellectuelle minimale, applicable autant à l’actualité brûlante qu’aux débats de fond.\n\nSur la forme, l’interview illustre bien une tension classique de la communication politique contemporaine: comment rester compréhensible sans devenir simplificateur. La stratégie observée ici combine un registre oral direct, des formules marquantes, et des rappels méthodologiques plus lents. Ce dosage peut déranger selon les attentes du spectateur, mais il possède une efficacité réelle en termes de mémorisation. On retient des principes actionnables plutôt qu’une accumulation de détails désordonnés. Du point de vue éditorial, c’est précisément ce qui justifie un format de résumé long: rendre explicites les articulations implicites de la conversation, et séparer ce qui relève du constat, de la proposition et de l’interprétation.\n\nIl faut aussi noter les limites de preuve du corpus disponible localement. Les métadonnées indiquent des sources transcriptes auto-générées, avec un niveau de confiance intermédiaire. L’absence, dans ce dépôt, des fichiers bruts mentionnés impose de rester prudent sur certaines citations exactes et sur quelques nuances lexicales. Cette contrainte ne bloque pas le travail éditorial, mais elle exige une discipline de formulation: privilégier la reformulation fidèle, signaler les zones d’incertitude, et éviter d’attribuer des recommandations précises non vérifiées. En clair, mieux vaut un champ « non disponible » explicitement assumé qu’une précision inventée. C’est plus utile, et infiniment plus sûr.\n\nAu total, la thèse qui se dégage est robuste: l’humour peut fonctionner comme infrastructure civique légère, à condition de ne pas trahir les faits et de maintenir une exigence de vérification. Dans un espace médiatique saturé, où la vitesse domine la profondeur, ce type de médiation peut réintroduire des publics dans la conversation politique sans les infantiliser. L’objectif n’est pas de produire un consensus artificiel, mais d’augmenter la qualité du désaccord. Et c’est probablement le point le plus important de l’entretien: une démocratie ne se mesure pas seulement à la quantité de prises de parole, mais à la capacité collective de discuter sur une base minimale de méthode, de preuve et de responsabilité.\n\nEn lecture stratégique, l’entretien peut être compris comme une proposition de chaîne complète: accessibilité économique, langage culturel partagé, pédagogie de l’esprit critique, puis réappropriation citoyenne du débat public. Chaque maillon est discutable, mais l’ensemble est cohérent. Si l’on retire l’accessibilité, le public se rétrécit. Si l’on retire la pédagogie, l’audience reste captive de réflexes de surface. Si l’on retire la vérification, la parole critique se confond avec une opinion de plus dans le bruit général. Ce qui est défendu ici, au fond, est une écologie de l’attention: créer des conditions où des personnes ordinaires peuvent reprendre prise sur des sujets complexes, sans céder à la résignation ni à la crédulité.\n\nUne lecture complémentaire consiste à observer la notion de légitimité qui traverse implicitement l’entretien. Qui a le droit de parler de politique, et dans quel registre de langue? Le format laisse entendre qu’il existe une frontière symbolique entre parole experte et parole profane, frontière que l’humour peut parfois fissurer. Quand un intervenant reformule des enjeux complexes dans un vocabulaire quotidien, il ne simplifie pas nécessairement le réel; il peut aussi rétablir une continuité entre expérience vécue et débat macro-politique. Cette continuité est cruciale pour éviter deux écueils symétriques: d’un côté le technicisme qui décourage, de l’autre le slogan qui écrase les nuances. Dans l’interview, la valeur ajoutée vient précisément de cet entre-deux: rendre intelligible sans dégrader le niveau d’exigence.\n\nLa séquence sur les œuvres recommandées, même incomplète sur le plan bibliographique, révèle aussi une logique pédagogique intéressante. Les références identifiées couvrent des formats hétérogènes: essai politique, fiction cinématographique, culture manga. Ce panachage n’est pas anecdotique. Il suggère qu’une formation civique efficace ne passe pas uniquement par les textes théoriques, mais aussi par des récits qui travaillent l’empathie, la persévérance et la perception de l’injustice sociale. En termes d’ingénierie culturelle, cela revient à multiplier les portes d’entrée vers la même compétence finale: apprendre à interpréter le monde, repérer les rapports de force et garder une capacité d’action. Correction: ce constat est analytique, pas une citation littérale. Mais il reste fidèle à la structure argumentative observée dans les matériaux disponibles.\n\nEnfin, il est utile de souligner l’intérêt démocratique d’un tel format long. Dans un écosystème où les contenus courts dominent, deux heures d’entretien imposent une temporalité différente, propice à la contradiction et à la précision progressive. Cette durée ne garantit pas la vérité, évidemment, mais elle réduit l’avantage des réponses purement réflexes. On voit apparaître des reformulations, des retours en arrière, des clarifications, parfois des limites assumées. Pour le lecteur de ce portail, la conséquence pratique est claire: un bon résumé ne doit pas remplacer l’entretien source, il doit servir de carte de navigation pour y retourner avec de meilleures questions. C’est l’objectif de cette nouvelle trame éditoriale: faciliter la lecture, expliciter l’incertitude quand elle existe, et préserver la possibilité d’un jugement autonome informé.",
+      "themes_topics": [
+        "Humour politique",
+        "Accès à la culture",
+        "Médias et fatigue informationnelle",
+        "Orientation idéologique gauche/droite",
+        "6e République",
+        "Jeunesse et réseaux sociaux",
+        "Esprit critique et vérification des sources",
+        "Transmission culturelle"
+      ],
+      "notable_quotes": [
+        "Je veux pas que mes places soient chères... je veux que la culture soit accessible.",
+        "Je veux toucher les gens qui sont fatigués de regarder les infos et d'avoir le sentiment d'être pris pour des cons.",
+        "Il faut aller clairement à gauche.",
+        "On a fait des générations de gens mal informés et mal éduqués volontairement.",
+        "Toujours avoir l'esprit critique, essayer de vérifier les informations par vous-même."
+      ],
+      "books_resources_mentioned": [
+        "Noam Chomsky, Les dessous de la politique de l'oncle Sam (mentionné pendant les recommandations)",
+        "Film: Will Hunting",
+        "Manga: Naruto"
+      ],
+      "advice_to_younger_generations": "Toujours garder l'esprit critique et vérifier les informations par soi-même avant d'adopter une opinion.",
+      "confidence_evidence": {
+        "overall_confidence": 0.74,
+        "method_note": "Synthèse construite à partir du transcript local DSxc3eVBwYk.fr.txt; formulation nettoyée d'un verbatim auto-généré imparfait.",
+        "snippets": [
+          "Je m'appelle Hakim Omiri. Je suis humoriste, comédien, auteur.",
+          "Je veux pas que mes places soient chères... je veux que la culture se soit accessible.",
+          "il faut aller clairement à gauche",
+          "Je voudrais que tu recommandes trois livres... Noam Schumski, les dessous de la politique de l'oncle Sam.",
+          "Toujours avoir l'esprit critique... vérifier les informations par vous-même."
+        ],
+        "source_files": [
+          "DSxc3eVBwYk.fr.txt",
+          "DSxc3eVBwYk.fr.vtt"
+        ]
+      },
+      "executive_summary": "Akim Omiri présente une ligne claire: utiliser l’humour comme outil d’accès au débat public, sans transformer le propos politique en niche sociale. L’entretien insiste sur trois axes: rendre la culture abordable, reconstruire des réflexes d’esprit critique face à la fatigue informationnelle, et transmettre des repères lisibles à un public large, notamment jeune. Le fil directeur n’est pas de produire une vérité fermée, mais de proposer des grilles de lecture et d’inviter chacun à vérifier, comparer et juger par lui-même. Les éléments ci-dessous distinguent ce qui est explicitement mentionné de ce qui relève d’une reformulation analytique.",
+      "key_teachings": [
+        "L’humour est traité comme un vecteur d’entrée vers la complexité, pas comme un substitut au raisonnement.",
+        "L’accessibilité économique de la culture influence directement la diversité sociale du public et donc la qualité du débat.",
+        "La posture la plus solide combine orientation assumée et invitation explicite à la vérification contradictoire.",
+        "La fatigue informationnelle vient aussi de contraintes structurelles (vitesse, algorithmes, polarisation), pas seulement d’intentions individuelles.",
+        "Pour les jeunes, la compétence clé reste l’autonomie de jugement: vérifier, recouper, distinguer fait, opinion et propagande."
+      ],
+      "thinkerview_box": {
+        "books_to_read": [
+          "Noam Chomsky, « Les dessous de la politique de l’oncle Sam » (mention explicite, confiance modérée)",
+          "Livre #2: non identifié de manière fiable dans les sources locales disponibles",
+          "Livre #3: non identifié de manière fiable dans les sources locales disponibles"
+        ],
+        "advice_for_younger_generations": "Toujours garder l’esprit critique et vérifier les informations par soi-même avant d’adopter une opinion.",
+        "evidence_note": "Caveat méthode: les fichiers transcript bruts mentionnés dans les métadonnées ne sont pas présents dans ce dépôt. Les champs non vérifiables sont marqués comme indisponibles pour éviter toute hallucination."
+      }
+    }
+  ]
+}
