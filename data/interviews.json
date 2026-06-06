@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T07:35:54.674Z",
+  "generated_at": "2026-06-06T08:03:02.347Z",
   "source_url": "https://www.thinkerview.com/page/47/",
   "channel": {
     "name": "Thinkerview",
@@ -17948,7 +17948,7 @@
       "url": "https://www.youtube.com/watch?v=TEbv3qJ5_Yk",
       "thumbnail": "https://i.ytimg.com/vi/TEbv3qJ5_Yk/hqdefault.jpg",
       "transcript": {
-        "available": false,
+        "available": true,
         "language": "fr-orig",
         "words": 116,
         "source_file": "data/transcripts/TEbv3qJ5_Yk.fr-orig.vtt"
@@ -18020,7 +18020,7 @@
           ]
         }
       ],
-      "method_note": "Résumé éditorial reconstruit à partir du transcript local data/transcripts/TEbv3qJ5_Yk.fr.vtt, limité à un fragment très court et nettoyé des répétitions VTT.",
+      "method_note": "Résumé éditorial reconstruit à partir du transcript YouTube local data/transcripts/TEbv3qJ5_Yk.fr-orig.vtt, limité à un fragment très court et nettoyé des répétitions VTT.",
       "confidence": 0.54,
       "youth_advice": "Pour les jeunes, la leçon la plus nette est de ne pas prendre le discours institutionnel pour la réalité du terrain. Il faut apprendre à demander les chiffres, les pertes, les mécanismes de contrôle et les responsabilités exactes, plutôt que se satisfaire d'un vocabulaire de confiance ou de conformité.",
       "reading_recommendations": [

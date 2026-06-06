@@ -16,9 +16,11 @@ import {
   Sparkles
 } from "lucide-react";
 import rawData from "@/data/interviews.json";
+import { publishedInterviews } from "@/lib/published-interviews";
 import type { Interview, PortalData } from "@/types/portal";
 
 const data = rawData as PortalData;
+const interviews = publishedInterviews(data);
 
 const themeLabels: Record<string, string> = {
   democratie: "Démocratie",
@@ -30,7 +32,7 @@ const themeLabels: Record<string, string> = {
 };
 
 export function generateStaticParams() {
-  return data.interviews.map((interview) => ({ slug: interview.slug }));
+  return interviews.map((interview) => ({ slug: interview.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -159,7 +161,7 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
 }
 
 function findInterview(slug: string): Interview | undefined {
-  return data.interviews.find((interview) => interview.slug === slug);
+  return interviews.find((interview) => interview.slug === slug);
 }
 
 function formatNumber(value: number) {

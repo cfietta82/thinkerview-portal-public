@@ -71,7 +71,7 @@
       ]
     }
   ],
-  "method_note": "Résumé éditorial reconstruit à partir du transcript local data/transcripts/TEbv3qJ5_Yk.fr.vtt, limité à un fragment très court et nettoyé des répétitions VTT.",
+  "method_note": "Résumé éditorial reconstruit à partir du transcript YouTube local data/transcripts/TEbv3qJ5_Yk.fr-orig.vtt, limité à un fragment très court et nettoyé des répétitions VTT.",
   "confidence": 0.54,
   "generated_at": "2026-06-05T12:37:23.203Z"
 }
