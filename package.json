@@ -9,7 +9,11 @@
     "lint": "eslint",
     "summaries:audit": "node scripts/audit-editorial-summaries.mjs",
     "summaries:generate": "node scripts/generate-editorial-summaries.mjs",
-    "summaries:merge": "node scripts/merge-editorial-summaries.mjs"
+    "summaries:merge": "node scripts/merge-editorial-summaries.mjs",
+    "editorial:50:init": "node scripts/editorial-review-50.mjs init",
+    "editorial:50:status": "node scripts/editorial-review-50.mjs status",
+    "editorial:50:next": "node scripts/editorial-review-50.mjs next",
+    "editorial:50:validate": "node scripts/editorial-review-50.mjs validate"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
