@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteNavigation } from "@/components/site-navigation";
 import { ArrowRight, BarChart3, BookOpenText, FileText, MessageSquareQuote } from "lucide-react";
 import rawData from "@/data/interviews.json";
 import { publishedPortalData } from "@/lib/published-interviews";
@@ -10,17 +11,8 @@ export default function Page() {
   const metrics = corpusMetrics(data.interviews);
   return (
     <main className="min-h-screen bg-[linear-gradient(135deg,#0f0f0d,#151814_52%,#0b1718)] text-stone-50">
+      <SiteNavigation />
       <section className="mx-auto flex min-h-screen max-w-7xl flex-col px-5 py-8 md:px-8">
-        <header className="flex items-center justify-between border-b border-white/10 pb-5">
-          <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center border border-amber-200/50 bg-amber-200 text-sm font-black text-stone-950">T</div>
-            <div>
-              <p className="text-lg font-semibold tracking-[0.08em]">THINKERVIEW</p>
-              <p className="text-xs uppercase tracking-[0.22em] text-stone-400">Corpus Portal</p>
-            </div>
-          </div>
-          <Link href="/resumes" className="hidden border border-white/15 px-4 py-2 text-sm text-stone-200 hover:border-amber-300 hover:text-amber-100 sm:inline-flex">Catalogue</Link>
-        </header>
         <div className="grid flex-1 content-center gap-12 py-12 lg:grid-cols-[1fr_0.78fr] lg:items-center">
           <div>
             <p className="text-xs uppercase tracking-[0.24em] text-amber-200">Archive éditoriale premium</p>
@@ -35,7 +27,7 @@ export default function Page() {
           </div>
           <div className="grid gap-4">
             <HomeCard href="/resumes" icon={<FileText className="h-6 w-6" />} title="Résumé des interviews" description="Catalogue complet des pages éditoriales, avec filtres par thème, année et recherche libre." />
-            <HomeCard href="/analyse" icon={<BarChart3 className="h-6 w-6" />} title="Analyse du corpus" description="Conseils aux jeunes générations, recommandations de lecture, graphiques d’évolution et synthèse à venir." />
+            <HomeCard href="/analyse" icon={<BarChart3 className="h-6 w-6" />} title="Analyse du corpus" description="Conseils aux jeunes générations, recommandations de lecture, graphiques d’évolution et synthèse globale." />
           </div>
         </div>
       </section>

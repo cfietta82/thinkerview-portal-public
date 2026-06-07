@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { ArrowRight, CalendarDays, Clock3, FileText, Search, ShieldCheck, UserRound, X } from "lucide-react";
 import type { Interview, PortalData } from "@/types/portal";
+import { SiteNavigation } from "@/components/site-navigation";
 import { corpusMetrics, interviewYear, themeLabels } from "@/lib/analysis";
 
 function percent(value: number) {
@@ -40,9 +41,10 @@ export function Portal({ data }: { data: PortalData }) {
 
   return (
     <main className="min-h-screen bg-background">
+      <SiteNavigation />
       <section className="border-b border-stone-800 bg-stone-950">
         <div className="mx-auto max-w-7xl px-5 py-10 md:px-8">
-          <Link href="/" className="text-xs uppercase tracking-[0.24em] text-amber-200">Thinkerview Corpus</Link>
+          <p className="text-xs uppercase tracking-[0.24em] text-amber-200">Catalogue éditorial</p>
           <div className="mt-5 grid gap-8 xl:grid-cols-[1fr_520px]">
             <div>
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-stone-50 md:text-5xl">Résumés éditoriaux des interviews</h1>

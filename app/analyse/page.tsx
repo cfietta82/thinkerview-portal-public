@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteNavigation } from "@/components/site-navigation";
 import { ArrowRight, BarChart3, BookOpenText, Cloud, FileText } from "lucide-react";
 import { corpusOverview, corpusEvidence } from "@/lib/corpus-analysis";
 
@@ -39,6 +40,7 @@ const metrics = [
 export default function AnalysePage() {
   return (
     <main className="min-h-screen bg-[#090807] text-stone-100">
+      <SiteNavigation />
       <section className="border-b border-stone-800 bg-[#12100d]">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">

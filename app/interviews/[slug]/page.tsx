@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { SiteNavigation } from "@/components/site-navigation";
 import { VideoPosterEmbed } from "@/components/video-poster-embed";
 import {
   ArrowLeft,
@@ -45,12 +46,16 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
 
   return (
     <main>
+      <SiteNavigation />
       <section className="border-b border-white/10 bg-[linear-gradient(135deg,#111111,#17120d_46%,#0f1715)]">
         <div className="mx-auto max-w-6xl px-5 py-8 md:px-8">
-          <Link href="/resumes" className="inline-flex items-center gap-2 text-sm text-stone-300 transition hover:text-amber-200">
-            <ArrowLeft className="h-4 w-4" />
-            Retour aux résumés
-          </Link>
+          <div className="flex flex-wrap items-center gap-2 text-sm text-stone-300">
+            <Link href="/" className="transition hover:text-amber-200">Accueil</Link>
+            <span className="text-stone-600">/</span>
+            <Link href="/resumes" className="transition hover:text-amber-200">Interviews</Link>
+            <span className="text-stone-600">/</span>
+            <span className="text-stone-500">{interview.guest}</span>
+          </div>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border border-white/12 bg-white/[0.06] p-3">
@@ -123,9 +128,15 @@ export default async function InterviewPage({ params }: { params: Promise<{ slug
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:px-8 lg:grid-cols-[240px_1fr]">
-        <aside className="lg:sticky lg:top-6 lg:self-start">
+        <aside className="lg:sticky lg:top-28 lg:self-start">
           <div className="border border-stone-800 bg-stone-950 p-4">
             <p className="text-xs uppercase tracking-[0.16em] text-stone-500">Navigation</p>
+            <div className="mt-4 grid gap-2 border-b border-stone-800 pb-4">
+              <Link href="/" className="text-sm leading-5 text-stone-300 transition hover:text-amber-200">Accueil</Link>
+              <Link href="/resumes" className="text-sm leading-5 text-stone-300 transition hover:text-amber-200">Toutes les interviews</Link>
+              <Link href="/analyse" className="text-sm leading-5 text-stone-300 transition hover:text-amber-200">Analyse du corpus</Link>
+            </div>
+            <p className="mt-4 text-xs uppercase tracking-[0.16em] text-stone-500">Dans cette page</p>
             <nav className="mt-4 grid gap-2">
               {interview.sections.map((section, index) => (
                 <a href={`#section-${index + 1}`} className="text-sm leading-5 text-stone-300 transition hover:text-amber-200" key={section.title}>

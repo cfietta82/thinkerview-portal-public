@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteNavigation } from "@/components/site-navigation";
 import { ArrowLeft, ShieldCheck } from "lucide-react";
 import { adviceAxes, adviceKeywords, corpusOverview } from "@/lib/corpus-analysis";
 
@@ -12,6 +13,7 @@ function sizeClass(weight: number) {
 export default function ConseilsPage() {
   return (
     <main className="min-h-screen bg-[#090807] text-stone-100">
+      <SiteNavigation />
       <section className="border-b border-stone-800 bg-[#12100d]">
         <div className="mx-auto max-w-7xl px-6 py-12">
           <Link href="/analyse" className="inline-flex items-center gap-2 text-sm text-stone-400 hover:text-amber-200">
