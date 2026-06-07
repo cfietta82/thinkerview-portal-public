@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { BookOpenText, Search, X } from "lucide-react";
+import React from "react";
+import { themeLabels } from "@/lib/analysis";
 
-type Recommendation = {
+type Item = {
   recommendation: string;
   type: string;
   guest: string;
@@ -13,41 +13,92 @@ type Recommendation = {
   themes: string[];
 };
 
-export function RecommendationsBrowser({ items }: { items: Recommendation[] }) {
-  const [type, setType] = React.useState("Tous");
+export function RecommendationsBrowser({ items }: { items: Item[] }) {
+  const [activeType, setActiveType] = React.useState("all");
+  const [activeTheme, setActiveTheme] = React.useState("all");
+  const [activeYear, setActiveYear] = React.useState("all");
   const [query, setQuery] = React.useState("");
-  const types = React.useMemo(() => ["Tous", ...Array.from(new Set(items.map((item) => item.type))).sort()], [items]);
+
+  const types = React.useMemo(() => Array.from(new Set(items.map((item) => item.type))).sort(), [items]);
+  const years = React.useMemo(() => Array.from(new Set(items.map((item) => item.year))).sort((a, b) => Number(b) - Number(a)), [items]);
+  const themes = React.useMemo(() => Array.from(new Set(items.flatMap((item) => item.themes))).sort(), [items]);
+
   const filtered = React.useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return items.filter((item) => (type === "Tous" || item.type === type) && (!q || [item.recommendation, item.guest, item.title, item.year, item.type].join(" ").toLowerCase().includes(q)));
-  }, [items, query, type]);
+    const normalized = query.trim().toLowerCase();
+    return items.filter((item) => {
+      const matchesType = activeType === "all" || item.type === activeType;
+      const matchesTheme = activeTheme === "all" || item.themes.includes(activeTheme);
+      const matchesYear = activeYear === "all" || item.year === activeYear;
+      const haystack = [item.recommendation, item.guest, item.title, item.year].join(" ").toLowerCase();
+      return matchesType && matchesTheme && matchesYear && (!normalized || haystack.includes(normalized));
+    });
+  }, [activeType, activeTheme, activeYear, items, query]);
 
   return (
-    <div className="mt-8">
-      <div className="border border-stone-800 bg-stone-950 p-4">
-        <label className="relative block">
-          <Search className="absolute left-3 top-3 h-4 w-4 text-stone-500" />
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Rechercher une lecture, un invité, une année..." className="h-10 w-full border border-stone-800 bg-stone-900 pl-10 pr-3 text-sm text-stone-100 outline-none focus:border-amber-300" />
-        </label>
-        <div className="mt-4 flex gap-2 overflow-x-auto pb-1">
-          {types.map((item) => <button key={item} onClick={() => setType(item)} className={`whitespace-nowrap border px-3 py-2 text-sm ${type === item ? "border-amber-300 bg-amber-200 text-stone-950" : "border-stone-800 bg-stone-900 text-stone-300"}`}>{item}</button>)}
-          {(type !== "Tous" || query) && <button onClick={() => { setType("Tous"); setQuery(""); }} className="inline-flex items-center gap-2 border border-stone-700 px-3 py-2 text-sm text-stone-300"><X className="h-4 w-4" />Reset</button>}
+    <div className="space-y-8">
+      <div className="border border-stone-800 bg-[#11100e] p-5">
+        <input
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="Rechercher un auteur, un titre, une source ou un entretien..."
+          className="w-full border border-stone-700 bg-black/30 px-4 py-3 text-sm text-stone-100 outline-none placeholder:text-stone-600 focus:border-amber-300"
+        />
+        <div className="mt-5 grid gap-4 lg:grid-cols-3">
+          <FilterSelect label="Type" value={activeType} onChange={setActiveType} options={[["all", "Tous les types"], ...types.map((type) => [type, type] as [string, string])]} />
+          <FilterSelect label="Thème" value={activeTheme} onChange={setActiveTheme} options={[["all", "Tous les thèmes"], ...themes.map((theme) => [theme, themeLabels[theme] ?? theme] as [string, string])]} />
+          <FilterSelect label="Année" value={activeYear} onChange={setActiveYear} options={[["all", "Toutes les années"], ...years.map((year) => [year, year] as [string, string])]} />
         </div>
       </div>
-      <p className="mt-5 text-sm text-stone-400">{filtered.length} recommandations affichées sur {items.length}</p>
-      <div className="mt-4 grid gap-4 md:grid-cols-2">
-        {filtered.map((item, index) => <Link href={`/interviews/${item.slug}`} key={`${item.slug}-${index}`} className="group border border-stone-800 bg-stone-950 p-5 transition hover:border-amber-300/60 hover:bg-stone-900">
-          <div className="flex items-start justify-between gap-4">
-            <span className="border border-teal-300/20 bg-teal-200/10 px-2 py-1 text-xs text-teal-100">{item.type}</span>
-            <BookOpenText className="h-5 w-5 shrink-0 text-amber-200" />
-          </div>
-          <p className="mt-4 text-lg font-semibold leading-7 text-stone-50">{item.recommendation}</p>
-          <p className="mt-3 text-sm leading-6 text-stone-400">{item.guest} · {item.year}</p>
-          <p className="mt-1 line-clamp-2 text-sm text-stone-500">{item.title}</p>
-        </Link>)}
+
+      <div className="flex items-center justify-between gap-4">
+        <h2 className="text-2xl font-semibold text-white">{filtered.length} recommandations affichées</h2>
+        <p className="hidden text-sm text-stone-500 md:block">Tri par type, thème, année et recherche libre.</p>
+      </div>
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        {filtered.map((item, index) => (
+          <article key={item.slug + "-" + item.recommendation + "-" + index} className="border border-stone-800 bg-black/20 p-5">
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-amber-300 px-2.5 py-1 text-xs font-semibold text-black">{item.type}</span>
+              <span className="border border-stone-700 px-2.5 py-1 text-xs text-stone-400">{item.year}</span>
+            </div>
+            <h3 className="mt-5 text-xl font-semibold leading-7 text-white">{item.recommendation}</h3>
+            <p className="mt-4 text-sm leading-7 text-stone-300">Recommandation citée ou suggérée dans l'entretien avec {item.guest}.</p>
+            <a href={"/interviews/" + item.slug} className="mt-5 inline-block text-sm font-semibold text-amber-200 hover:text-amber-100">
+              {item.title}
+            </a>
+          </article>
+        ))}
       </div>
     </div>
   );
 }
 
-import React from "react";
+function FilterSelect({
+  label,
+  value,
+  onChange,
+  options,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  options: [string, string][];
+}) {
+  return (
+    <label className="block">
+      <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.22em] text-stone-500">{label}</span>
+      <select
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="w-full border border-stone-700 bg-black/30 px-4 py-3 text-sm text-stone-100 outline-none focus:border-amber-300"
+      >
+        {options.map(([optionValue, labelText]) => (
+          <option key={optionValue} value={optionValue}>
+            {labelText}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}

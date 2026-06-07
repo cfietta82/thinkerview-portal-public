@@ -1,12 +1,82 @@
 import Link from "next/link";
-import rawData from "@/data/interviews.json";
-import { adviceWordCloud } from "@/lib/analysis";
-import { publishedPortalData } from "@/lib/published-interviews";
-import type { PortalData } from "@/types/portal";
+import { ArrowLeft, ShieldCheck } from "lucide-react";
+import { adviceAxes, adviceKeywords, corpusOverview } from "@/lib/corpus-analysis";
+
+function sizeClass(weight: number) {
+  if (weight >= 90) return "text-4xl md:text-6xl";
+  if (weight >= 75) return "text-3xl md:text-5xl";
+  if (weight >= 60) return "text-2xl md:text-4xl";
+  return "text-xl md:text-3xl";
+}
 
 export default function ConseilsPage() {
-  const words = adviceWordCloud(publishedPortalData(rawData as PortalData).interviews);
-  const max = Math.max(...words.map((item) => item.count), 1);
-  return <main className="min-h-screen bg-background"><section className="mx-auto max-w-7xl px-5 py-10 md:px-8"><Header title="Conseils aux jeunes générations" /><div className="mt-8 border border-stone-800 bg-stone-950 p-6"><div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-4">{words.map((item) => <span key={item.word} className="font-semibold text-amber-100" style={{ fontSize: `${14 + (item.count / max) * 34}px`, opacity: 0.58 + (item.count / max) * 0.42 }}>{item.word}</span>)}</div></div></section></main>;
+  return (
+    <main className="min-h-screen bg-[#090807] text-stone-100">
+      <section className="border-b border-stone-800 bg-[#12100d]">
+        <div className="mx-auto max-w-7xl px-6 py-12">
+          <Link href="/analyse" className="inline-flex items-center gap-2 text-sm text-stone-400 hover:text-amber-200">
+            <ArrowLeft className="h-4 w-4" /> Analyse
+          </Link>
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">Conseils récurrents</p>
+              <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-5xl">
+                Ce que les invités transmettent aux générations suivantes
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-300">
+                Les conseils convergent moins vers une morale individuelle que vers une discipline de lucidité : apprendre, vérifier, produire, se former techniquement et défendre le commun.
+              </p>
+            </div>
+            <div className="border border-amber-300/30 bg-black/25 p-6">
+              <ShieldCheck className="h-7 w-7 text-amber-300" />
+              <p className="mt-4 text-2xl font-semibold leading-9 text-amber-100">{corpusOverview.shortThesis}</p>
+              <p className="mt-4 text-sm leading-7 text-stone-400">
+                Le nuage ci-dessous est éditorialisé à partir des recommandations explicites, des formules récurrentes et des priorités pratiques identifiées dans l'analyse du corpus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <div className="border border-stone-800 bg-[#11100e] p-6 md:p-10">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 text-center">
+            {adviceKeywords.map((item, index) => (
+              <span
+                key={item.word}
+                className={[
+                  "font-semibold leading-none",
+                  sizeClass(item.weight),
+                  index % 4 === 0 ? "text-amber-200" : index % 4 === 1 ? "text-stone-100" : index % 4 === 2 ? "text-cyan-200" : "text-lime-200",
+                ].join(" ")}
+                title={item.axis}
+              >
+                {item.word}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-16">
+        <div className="mb-6 flex items-end justify-between gap-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-stone-500">Doctrine pratique</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">Huit réflexes de reconstruction</h2>
+          </div>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {adviceAxes.map((axis, index) => (
+            <article key={axis.title} className="border border-stone-800 bg-black/20 p-5">
+              <div className="mb-5 flex h-9 w-9 items-center justify-center bg-amber-300 text-sm font-bold text-black">
+                {index + 1}
+              </div>
+              <h3 className="text-xl font-semibold text-white">{axis.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-stone-300">{axis.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
 }
-function Header({ title }: { title: string }) { return <><Link href="/analyse" className="text-xs uppercase tracking-[0.24em] text-amber-200">Analyse</Link><h1 className="mt-5 text-4xl font-semibold text-stone-50 md:text-5xl">{title}</h1><p className="mt-4 max-w-3xl text-base leading-7 text-stone-300">Nuage construit à partir du champ éditorial “conseils aux jeunes générations” des pages publiées.</p></>; }
