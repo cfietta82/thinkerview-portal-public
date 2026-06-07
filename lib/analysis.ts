@@ -29,6 +29,14 @@ export const orientationLabels: Record<string, string> = {
   "non renseigné": "Non renseigné"
 };
 
+export const orientationColors: Record<string, string> = {
+  gauche: "bg-rose-300",
+  centre: "bg-sky-300",
+  droite: "bg-amber-300",
+  "non politique": "bg-stone-500",
+  "non renseigné": "bg-stone-700"
+};
+
 const stopwords = new Set("alors aussi avec avoir cette comme dans donc elle elles entre être faire faut il ils leur mais nous pour plus quand que qui quoi sans sont tout très vous aux ces des une les est par sur ses son sa non pas".split(" "));
 
 export function interviewYear(interview: Interview) {
@@ -36,10 +44,15 @@ export function interviewYear(interview: Interview) {
   return match?.[0] ?? "Date à préciser";
 }
 
+export function uniqueGuestCount(interviews: Interview[]) {
+  return new Set(interviews.map((interview) => interview.guest.trim().toLowerCase()).filter(Boolean)).size;
+}
+
 export function corpusMetrics(interviews: Interview[]) {
   return {
     interviews: interviews.length,
     hours: Math.round(interviews.reduce((acc, interview) => acc + interview.duration_seconds, 0) / 3600),
+    guests: uniqueGuestCount(interviews),
     transcripts: interviews.filter((interview) => interview.transcript.available).length,
     recommendations: interviews.reduce((acc, interview) => acc + (interview.reading_recommendations?.length ?? 0), 0)
   };
@@ -56,7 +69,7 @@ export function adviceWordCloud(interviews: Interview[]) {
 
 export function recommendationType(recommendation: string) {
   const text = recommendation.toLowerCase();
-  if (/rapport|documents?|données|statistiques|publics?|parlementaire|commission|cour des comptes|aIE|rte|arcom|insee/.test(text)) return "Rapports et données";
+  if (/rapport|documents?|données|statistiques|publics?|parlementaire|commission|cour des comptes|aie|rte|arcom|insee/.test(text)) return "Rapports et données";
   if (/documentaire|film|conférences?|podcast|émission|interview|chaîne|videos?|vidéos?/.test(text)) return "Médias et documentaires";
   if (/travaux|recherches?|études?|analyses?|ressources|publications|ouvrages?/.test(text)) return "Recherche et essais";
   if (/de |, |: /.test(recommendation) && !/rapport|travaux|analyses|ressources/i.test(recommendation)) return "Livres et auteurs";
@@ -87,6 +100,14 @@ export function politicalOrientation(interview: Interview) {
   return interview.political_orientation ?? "non renseigné";
 }
 
+export function orientationDistribution(interviews: Interview[]) {
+  const labels = ["gauche", "centre", "droite", "non politique", "non renseigné"];
+  return labels.map((label) => ({
+    label,
+    count: interviews.filter((interview) => politicalOrientation(interview) === label).length
+  }));
+}
+
 export function orientationEvolution(interviews: Interview[]) {
   const years = [...new Set(interviews.map(interviewYear).filter((year) => year !== "Date à préciser"))].sort();
   const labels = ["gauche", "centre", "droite", "non politique", "non renseigné"];
@@ -97,4 +118,29 @@ export function topThemes(interviews: Interview[]) {
   const counts = new Map<string, number>();
   for (const interview of interviews) for (const theme of interview.themes) counts.set(theme, (counts.get(theme) ?? 0) + 1);
   return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+export function yearlyCorpusRows(interviews: Interview[]) {
+  const years = [...new Set(interviews.map(interviewYear).filter((year) => year !== "Date à préciser"))].sort();
+  const labels = ["gauche", "centre", "droite", "non politique", "non renseigné"];
+  return years.map((year) => {
+    const scoped = interviews.filter((interview) => interviewYear(interview) === year);
+    return {
+      year,
+      total: scoped.length,
+      orientations: labels.map((label) => ({
+        label,
+        count: scoped.filter((interview) => politicalOrientation(interview) === label).length
+      })),
+      themes: topThemes(scoped).slice(0, 4)
+    };
+  });
+}
+
+export function themesByOrientation(interviews: Interview[]) {
+  const labels = ["gauche", "centre", "droite", "non politique"];
+  return labels.map((label) => ({
+    label,
+    themes: topThemes(interviews.filter((interview) => politicalOrientation(interview) === label)).slice(0, 6)
+  }));
 }
