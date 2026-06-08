@@ -5,6 +5,8 @@ import {
   causalChains,
   corpusOverview,
   corpusTensions,
+  detailedSynthesisSections,
+  finalCorpusSentence,
   majorWarnings,
   openQuestions,
   recurringFindings,
@@ -79,10 +81,10 @@ export default function SynthesePage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-5 px-6 pb-16 lg:grid-cols-2">
-        <ListPanel title="Constats récurrents" items={recurringFindings} />
-        <ListPanel title="Avertissements majeurs" items={majorWarnings} />
-        <ListPanel title="Leviers de reconstruction" items={reconstructionLevers} />
-        <ListPanel title="Questions ouvertes" items={openQuestions} />
+        <ListPanel title="20 constats essentiels" items={recurringFindings} />
+        <ListPanel title="20 avertissements majeurs" items={majorWarnings} />
+        <ListPanel title="20 leviers d’action" items={reconstructionLevers} />
+        <ListPanel title="20 questions ouvertes" items={openQuestions} />
       </section>
 
       <section className="border-t border-stone-800 bg-[#12100d]">
@@ -98,6 +100,41 @@ export default function SynthesePage() {
           <p className="mt-10 max-w-5xl text-xl font-semibold leading-9 text-white">
             La conclusion n'est pas un programme partisan, mais une exigence de méthode : accepter le coût du réel, retrouver des capacités concrètes, débattre des arbitrages et reconstruire les conditions matérielles d'une liberté politique.
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-stone-800 bg-[#090807]">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+            <div className="lg:sticky lg:top-28">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Analyse détaillée</p>
+              <h2 className="mt-4 text-4xl font-semibold leading-tight text-white">La lecture longue du corpus</h2>
+              <p className="mt-5 text-base leading-8 text-stone-400">
+                Cette section reprend la version longue de l’analyse : elle explicite la méthode Thinkerview, ses attracteurs profonds, sa lecture de la France, de l’Europe, de l’énergie, du numérique, de la cohésion et de l’évolution du corpus.
+              </p>
+              <p className="mt-6 border-l border-amber-300/60 pl-5 text-lg font-semibold leading-8 text-amber-100">
+                {finalCorpusSentence}
+              </p>
+            </div>
+            <div className="space-y-5">
+              {detailedSynthesisSections.map((section, index) => (
+                <article key={section.title} className="border border-stone-800 bg-[#11100e] p-6 md:p-8">
+                  <div className="mb-6 flex items-start gap-4">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-amber-300 text-sm font-bold text-black">{index + 1}</span>
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.22em] text-stone-500">Chapitre</p>
+                      <h3 className="mt-2 text-2xl font-semibold leading-tight text-white">{section.title}</h3>
+                    </div>
+                  </div>
+                  <div className="space-y-5 text-base leading-8 text-stone-300">
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </main>
